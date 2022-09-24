@@ -18,7 +18,7 @@ function onSubmitPost(evt){
         firstName: $('#first-name-input').val(),
         lastName: $('#last-name-input').val(),
         idNumber: $('#id-input').val(),
-        jobTitle: $('#job-title-inpu').val(),
+        jobTitle: $('#job-title-input').val(),
         salary: $('#salary-input').val(),
     }
 
@@ -28,7 +28,7 @@ function onSubmitPost(evt){
     console.log('employees are now:', employees);
     //calculate monthly costs
 
-    for (cost of employees){
+    for (let cost of employees){
         monthlyCosts+=Number(cost.salary);
     }
     console.log('total monthly cost is now', monthlyCosts);
@@ -37,9 +37,34 @@ function onSubmitPost(evt){
     render();
 };
 
+
 // Create render function
  function render(){
 //append table
+    $('#salary-table').empty();
+    $('#salary-table').append(`
+    <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID Number</th>
+                <th>Job Title</th>
+                <th>Salary</th> 
+            </tr>
+    `)
+    for(let employee of employees){
+        $('#salary-table').append(`
+        
+        <tr>
+            <td>${employee.firstName}</td>
+            <td>${employee.lastName}</td>
+            <td>${employee.idNumber}</td>
+            <td>${employee.jobTitle}</td>
+            <td>${employee.salary}</td>
+            
+        <tr>
+        `)
+    };
+    $('#S')
 
 //append salary total
     
