@@ -1,6 +1,6 @@
-[ ]setup jquery and css
+[ X]setup jquery and css
 
-[ ] create form element to collect:HTML
+[ X] create form and table element to collect:HTML
     [ X] employee first name
     [ X] employee last name
     [ X] employee ID number
@@ -14,7 +14,7 @@
 
 [ ] append submitted information to the dom
 
-    [ ]create global array for accepting input objects -JS and JQUERY ON CLICK APPEND TO GLOBAL ARRAY IN STATE MOD
+    [ X]create global array for accepting input objects -JS and JQUERY ON CLICK APPEND TO GLOBAL ARRAY IN STATE MOD
     [ ]create global variable for total salary cost  -JS
     L
     [ ]input submitted information to table row -JQUERY APPEND IN RENDER
