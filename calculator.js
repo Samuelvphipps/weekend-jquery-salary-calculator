@@ -25,6 +25,7 @@ function onSubmitPost(evt){
         || $('#job-title-input').val() === ''
         || $('#salary-input').val()=== ''
     ){
+        alert('MUST HAVE INPUT');
         return
     };
 
