@@ -1,11 +1,11 @@
 [ ]setup jquery and css
 
 [ ] create form element to collect:HTML
-    [ ] employee first name
-    [ ] employee last name
-    [ ] employee ID number
-    [ ] job title
-    [ ] annual salary
+    [ X] employee first name
+    [ X] employee last name
+    [ X] employee ID number
+    [ X] job title
+    [ X] annual salary
 
     [ ] SUBMIT button  
 

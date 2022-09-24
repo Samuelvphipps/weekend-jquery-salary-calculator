@@ -8,9 +8,50 @@
     <script src="jquery.js"></script>
     <script src="calculator.js"></script>
     <link href="styles.css" rel="stylesheet">
-
+    
 </head>
 <body>
-
+    <h1>Salary Calculator</h1>
+    <!-- form for inputs -->
+    <form id="salary-form">
+        <!-- first name input -->
+        <div id="first-name-input" class="form-section">
+            <label for="first-name">
+                First Name: 
+            </label>
+            <input id="first-name" type="text"/>
+        </div>  
+        <!-- last name input -->
+        <div id="last-name-input" class="form-section">
+            <label for="last-name">
+                last-name Name: 
+            </label>
+            <input id="last-name" type="text"/>
+        </div> 
+        <!-- id number input -->
+        <div id="id-input" class="form-section">
+            <label for="id">
+                Employee ID number:
+            </label>
+            <input id="id" type="number"/>
+        </div>  
+        <!-- job title input -->
+        <div id="job-input" class="form-section">
+            <label for="job-title">
+                Job Title: 
+            </label>
+            <input id="job-title" type="text"/>
+        </div>  
+        <!-- annual salary input -->
+        <div id="salary-input" class="form-section">
+            <label for="salary">
+                Annual Salary: 
+            </label>
+            <input id="salary" type="number"/>
+        </div>  
+        <!-- submit button input -->
+        <button type="submit">Submit Information</button>
+        <!-- end form -->
+    </form>
 </body>
 </html>
