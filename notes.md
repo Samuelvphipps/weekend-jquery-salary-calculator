@@ -12,18 +12,17 @@
     [ X] create top-row of data information with title row
     [ X]create an empty table element with table row with separate ID to modify look for -HTML
 
-[ ] append submitted information to the dom
+[ X] append submitted information to the dom
 
     [ X]create global array for accepting input objects -JS and JQUERY ON CLICK APPEND TO GLOBAL ARRAY IN STATE MOD
-    [ ]create global variable for total salary cost  -JS
-    L
-    [ ]input submitted information to table row -JQUERY APPEND IN RENDER
-    [ ]include a remove button -JQUERY APPEND IN RENDER
-    [ ]total total monthly costs at bottom of page to add up all input employees -JQUERY RENDER which modifies total (global variable?)
+    [X]create global variable for total salary cost  -JS
+    [X ]input submitted information to table row -JQUERY APPEND IN RENDER
+    [C ]include a remove button -JQUERY APPEND IN RENDER
+    [X ]total total monthly costs at bottom of page to add up all input employees -JQUERY RENDER which modifies total (global variable?)
     
 
 [ ] remove button effects
-    [ ] removes row from DOM 
+    [ C] removes row from DOM 
     
     STRETCH:
     [ ] REMOVES SALARY AND UPDATES TOTAL IN DOM

@@ -8,6 +8,8 @@ let monthlyCosts=0;
 
 function onReady(){
     $('#salary-form').on('submit', onSubmitPost);
+    //delete employee function call
+    $('#salary-table').on('click', '.delete-btn', onDelete);
 };
 // Create onSubmitPost function
 function onSubmitPost(evt){
@@ -60,6 +62,7 @@ function onSubmitPost(evt){
             <td>${employee.idNumber}</td>
             <td>${employee.jobTitle}</td>
             <td>${employee.salary}</td>
+            <td><button class="delete-btn" >DELETE EMPLOYEE</button></td>
             
         <tr>
         `)
@@ -77,5 +80,6 @@ function onSubmitPost(evt){
  };
 // Create on delete row function
 function onDelete(){
-
+console.log('in onDelete');
+$(this).parent().parent().remove();
 };
