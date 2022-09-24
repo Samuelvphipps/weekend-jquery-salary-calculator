@@ -9,8 +9,9 @@ let monthlyCosts=0;
 function onReady(){
     $('#salary-form').on('submit', onSubmitPost);
     //delete employee function call
-    $('#salary-table').on('click', '.delete-btn', onDelete);
+    $('#table').on('click', '.delete-btn', onDelete);
 };
+
 // Create onSubmitPost function
 function onSubmitPost(evt){
     evt.preventDefault();
@@ -102,7 +103,7 @@ function calculateCosts(){
         monthlyCosts+=Number(cost.salary);
     };
     //convert to monthly
-    monthlyCosts=monthlyCosts/12;
+    monthlyCosts=Math.ceil(monthlyCosts/12);
     //empty display
     $('#total-cost').empty()
     //append new number

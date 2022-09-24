@@ -1,3 +1,6 @@
+body{
+    background-color: lightgreen;
+}
 #salary-table{
     border:3px solid black;
     margin:auto
@@ -6,18 +9,36 @@
     border: 3px solid black;
     width: 50%;
     margin: 2em auto;
+    background-color: white;
 }
 
 #salary-costs{
     align-items: right;
 }
-
+h2{
+    text-align: right;
+}
+span{
+    border:2px solid black;
+    padding: 10px;
+    margin: 1em 0 1em 0;
+    background-color: white;
+}
 td{
+    max-width: 200px;
     border: 1px solid black;
     word-wrap: break-word;
 }
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    color: white;
+    background-color: black;
+}
 
 h1{
+    background-color: white;
     text-align: center;
     border: 4px solid black;
     border-radius: 10px;
@@ -25,15 +46,19 @@ h1{
     margin:auto;
 }
 #red{
-    background-color: red;
+    background-color: rgb(219, 78, 78);
 }
 #full-table{
     margin:auto;
 }
 .form-section{
     text-align: center;
+    padding: 10px;
 }
-
+table{
+    background-color: white;
+    width: 90%;
+}
 th{
     width: 200px;
 }
