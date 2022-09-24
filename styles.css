@@ -2,7 +2,38 @@
     border:3px solid black;
     margin:auto
 }
+#salary-form{
+    border: 3px solid black;
+    width: 50%;
+    margin: 2em auto;
+}
+
+#salary-costs{
+    align-items: right;
+}
 
 td{
     border: 1px solid black;
+    word-wrap: break-word;
+}
+
+h1{
+    text-align: center;
+    border: 4px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin:auto;
+}
+#red{
+    background-color: red;
+}
+#full-table{
+    margin:auto;
+}
+.form-section{
+    text-align: center;
+}
+
+th{
+    width: 200px;
 }

@@ -11,9 +11,11 @@
     
 </head>
 <body>
-    <h1>Salary Calculator</h1>
+    <h1 >Salary Calculator</h1>
+
     <!-- form for inputs -->
     <form id="salary-form">
+        
         <!-- first name input -->
         <div id="first-name" class="form-section">
             <label for="first-name-input">
@@ -50,21 +52,18 @@
             <input id="salary-input" type="number"/>
         </div>  
         <!-- submit button input -->
-        <button type="submit">Submit Information</button>
+        <div class="form-section">
+            <label for="submit"></label>
+        <button type="submit" class="form-section">Submit Information</button>
+        </div>
         <!-- end form -->
     </form>
-
-        <table id="salary-table">
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>ID Number</th>
-                <th>Job Title</th>
-                <th>Salary</th> 
-            </tr> 
-        </table>
-    </secion>
-    
-    <h2 id="monthly-cost">Total Monthly Costs: $0</h2>
+        <section id="table">
+      
+    </section>
+    <div class="final-cost">
+        <h2>Total Monthly Costs:<span id="total-cost">$0</span></h2>
+    </div>
 </body>
 </html>
+
