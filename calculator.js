@@ -103,7 +103,7 @@ function calculateCosts(){
         monthlyCosts+=Number(cost.salary);
     };
     //convert to monthly
-    monthlyCosts=Math.ceil(monthlyCosts/12);
+    monthlyCosts=Math.round(monthlyCosts/12*100)/100;
     //empty display
     $('#total-cost').empty()
     //append new number
