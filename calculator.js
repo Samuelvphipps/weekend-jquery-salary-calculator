@@ -17,7 +17,7 @@ function onSubmitPost(evt){
     evt.preventDefault();
     // console.log('in onSubmit Post:YAY!');
     //collect form information
-    
+    // if field empty tell user that they must have an input
     if (
         $('#first-name-input').val()===''
         || $('#last-name-input').val()===''
@@ -56,6 +56,7 @@ function onSubmitPost(evt){
  function render(){
 //append table
     $('#table').empty();
+
     //keeps table heading constant
     $('#table').append(`
     <table id="salary-table">
@@ -68,7 +69,7 @@ function onSubmitPost(evt){
             </tr>
     </table>
     `);
-
+//append all array to dom
     for(let employee of employees){
         $('#salary-table').append(`
         
@@ -96,6 +97,8 @@ function onSubmitPost(evt){
 function onDelete(){
 console.log('in onDelete');
 //remove row from state
+//traversing dom to get employee ID number since this should be unique data
+//that way if there are two 'sams' it doesnt remove both from array
 let id=$(this).parent().prev().prev().prev().text();
 for(let i=0; i<employees.length; i++){
     if(id==employees[i].idNumber){
@@ -103,7 +106,10 @@ for(let i=0; i<employees.length; i++){
     }
 }
 console.log("id Number of deleted element", id);
+
+//delete row after updating the state
 $(this).parent().parent().remove();
+//rerun cost calculationn to update total
 calculateCosts();
 };
 
@@ -121,10 +127,11 @@ function calculateCosts(){
               $${monthlyCosts}
     `);
             
+    // added else statement to toggle class so total would revert to white after deletion
     if(monthlyCosts>=20000){
         $('#total-cost').prop('class', "red");
     }
     else{$('#total-cost').removeClass("red")};
-    
+
     // console.log('monthly costs is now', monthlyCosts);
 }
