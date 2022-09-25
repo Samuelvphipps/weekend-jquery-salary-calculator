@@ -12,7 +12,8 @@
 
 _Duration: 2 Week Sprint_
 
-The base mode content probably took around 5 hours. The css extras took me another hour. I spent quite a bit of time working on the stretch goal. I figured out how to search through an array of objects to find an object with a specified property value. I just havent figured out a way to use the deleted row info using the data() function.
+The base mode content probably took around 3-4 hours. The css extras took me another few hours. I spent quite a bit of time working on the stretch goal on saturday but was just stuck. 
+After stepping away I was able to reorient my focus, and through that I was able to come up with a solution that I thought might work. I wrote down a for loop and dom traverse idea before going to sleep then tested it in the morning. It worked! Super excited to have struggled through that.
 
 
 ### Prerequisites

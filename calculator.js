@@ -15,7 +15,7 @@ function onReady(){
 // Create onSubmitPost function
 function onSubmitPost(evt){
     evt.preventDefault();
-    console.log('in onSubmit Post:YAY!');
+    // console.log('in onSubmit Post:YAY!');
     //collect form information
     
     if (
@@ -37,11 +37,11 @@ function onSubmitPost(evt){
         salary: $('#salary-input').val(),
     }
 
-    console.log('newInfo is:', newInfo);
+    // console.log('newInfo is:', newInfo);
 
     //update STATE
     employees.push(newInfo);
-    console.log('employees are now:', employees);
+    // console.log('employees are now:', employees);
     //calculate monthly costs
     calculateCosts();
 
@@ -95,7 +95,16 @@ function onSubmitPost(evt){
 // Create on delete row function
 function onDelete(){
 console.log('in onDelete');
+//remove row from state
+let id=$(this).parent().prev().prev().prev().text();
+for(let i=0; i<employees.length; i++){
+    if(id==employees[i].idNumber){
+        employees.splice(i, 1);
+    }
+}
+console.log("id Number of deleted element", id);
 $(this).parent().parent().remove();
+calculateCosts();
 };
 
 function calculateCosts(){
@@ -115,5 +124,5 @@ function calculateCosts(){
     if(monthlyCosts>=20000){
         $('#total-cost').prop('id', "red")
     };
-    console.log('monthly costs is now', monthlyCosts);
+    // console.log('monthly costs is now', monthlyCosts);
 }
