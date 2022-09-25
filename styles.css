@@ -47,7 +47,7 @@ h1{
     width: 50%;
     margin:auto;
 }
-#red{
+.red{
     background-color: rgb(219, 78, 78);
 }
 #full-table{

@@ -122,7 +122,9 @@ function calculateCosts(){
     `);
             
     if(monthlyCosts>=20000){
-        $('#total-cost').prop('id', "red")
-    };
+        $('#total-cost').prop('class', "red");
+    }
+    else{$('#total-cost').removeClass("red")};
+    
     // console.log('monthly costs is now', monthlyCosts);
 }
